@@ -1,0 +1,67 @@
+#text{
+  margin-bottom: 10px;
+}
+
+.row, .row-headers{
+  display: table-row;
+  padding: 5px;
+}
+
+.row-headers{
+  font-weight: bold;
+}
+
+.cell{
+  display: table-cell;
+  text-align: center;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.cell:hover{ 
+  text-decoration: underline;
+}
+
+.table{
+  display: table;
+  max-width: 1600px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#search-results{
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 420px){
+
+  .row-headers{
+      display: none;
+  }
+
+  .cell:before{
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      border-bottom: 1px solid #ccc;
+  }
+
+  .cell:before:hover{
+      text-decoration: underline;
+  }
+
+  .cell{
+      display: block;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      margin: 0;
+  }
+
+  .cell:hover{
+      text-decoration: underline;
+  }
+
+  #last-cell{
+      border-bottom: 1px solid #ccc;
+  }
+}

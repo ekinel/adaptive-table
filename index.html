@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table</title>
+
+		<link rel="stylesheet" type="text/css" href="resources/css/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	</head>
+	<body>
+		<input type="text" id="text" placeholder="Введите текст">
+        <button onclick="search()">Поиск</button>
+		<p id="search-results">Результат поиска...</p>
+		
+        <div class="table">
+            <div class="row-headers">
+                <div class="cell">Название</div>
+                <div class="cell">Заказчик</div>
+                <div class="cell">Производитель</div>
+                <div class="cell">Цена</div>
+                <div class="cell">Месяц доставки</div>
+            </div>
+            <div class="row">
+                <div class="cell" data-label="Название">Астра</div>
+                <div class="cell" data-label="Заказчик">ИП Курякин</div>
+                <div class="cell" data-label="Производитель">Flora-co</div>
+                <div class="cell" data-label="Цена">1500</div>
+                <div class="cell" data-label="Месяц доставки">Май</div>
+            </div>
+            <div class="row">
+                <div class="cell" data-label="Название">Гортензия</div>
+                <div class="cell" data-label="Заказчик">ООО Эльда</div>
+                <div class="cell" data-label="Производитель">Larona</div>
+                <div class="cell" data-label="Цена">2400</div>
+                <div class="cell" data-label="Месяц доставки">Апрель</div>
+			</div>
+			<div class="row">
+                <div class="cell" data-label="Название">Роза</div>
+                <div class="cell" data-label="Заказчик">Томск-ко</div>
+                <div class="cell" data-label="Производитель">Cartis</div>
+                <div class="cell" data-label="Цена">800</div>
+                <div class="cell" data-label="Месяц доставки">Сентябрь</div>
+			</div>
+			<div class="row">
+                <div class="cell" data-label="Название">Ирис</div>
+                <div class="cell" data-label="Заказчик">Ларек №2</div>
+                <div class="cell" data-label="Производитель">More-more</div>
+                <div class="cell" data-label="Цена">600</div>
+                <div class="cell" data-label="Месяц доставки" id="last-cell">Октябрь</div>
+            </div>
+        </div>
+
+        <script src="resources/js/main.js"></script>
+	</body>
+</html>
